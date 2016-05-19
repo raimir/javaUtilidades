@@ -5,7 +5,7 @@ import javax.xml.bind.DatatypeConverter; //java 6+
 public class Base64 {
 
 	// encode
-	public String encode(String texto) {
+	public static String encode(String texto) {
 		try {
 			return DatatypeConverter.printBase64Binary(texto.getBytes("UTF-8"));
 		} catch (Exception e) {
