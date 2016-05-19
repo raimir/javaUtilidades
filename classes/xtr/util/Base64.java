@@ -18,7 +18,7 @@ public class Base64 {
 	public static String decode(String texto) throws Exception {
 		try {
 			byte[] decodeValor = DatatypeConverter.parseBase64Binary(texto);
-			return new String(decodeValor, "UTF-8");
+			return (new String(decodeValor, "UTF-8")).toString();
 		} catch (Exception e) {
 			e.printStackTrace();
 			return texto;
